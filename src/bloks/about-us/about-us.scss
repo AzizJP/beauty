@@ -2,6 +2,7 @@ $phone_padding: 15px;
 $tablet_padding: 25px;
 $left_padding: 40px;
 $right_padding: 45px;
+$max-width: 540px - $left_padding - $right_padding;
 
 .about-us {
   display: flex;
@@ -29,15 +30,15 @@ $right_padding: 45px;
     gap: 10px;
     padding: $phone_padding;
     width: calc(100% - $phone_padding * 2);
-    max-width: 540px - 85px;
+    max-width: $max-width;
     min-height: 212px;
     background-color: $color_accent;
+  }
 
-    &_without-image {
-      flex-direction: column;
-      justify-content: center;
-      align-items: start;
-    }
+  &__text-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
 
   &__form {
@@ -70,7 +71,7 @@ $right_padding: 45px;
     max-width: 231px;
     margin: 0;
 
-    &_without-image {
+    &_if-image-car {
       max-width: 141px;
     }
   }
@@ -92,7 +93,7 @@ $right_padding: 45px;
   }
 }
 
-@media screen and (min-width: $breakpoint_tablet) {
+@media screen and (min-width: ($breakpoint_tablet + 115px)) {
   .about-us {
     padding-bottom: 80px;
 
@@ -103,11 +104,15 @@ $right_padding: 45px;
     &__container {
       gap: 15px;
       padding: $tablet_padding;
-      width: calc(100% - $tablet_padding * 2);
+      min-width: $max-width;
     }
 
     &__image {
       width: 120px;
+    }
+
+    &__text-group {
+      gap: 15px;
     }
 
     &__form {
@@ -128,6 +133,10 @@ $right_padding: 45px;
 
     &__image {
       width: 140px;
+    }
+
+    &__text-group {
+      gap: 25px;
     }
 
     &__form {
