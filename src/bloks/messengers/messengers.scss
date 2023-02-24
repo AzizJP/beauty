@@ -13,6 +13,7 @@
     border-radius: 50%;
     width: 35px;
     height: 35px;
+    transition: opacity linear 0.2s;
   }
 
   &__logo {
@@ -49,6 +50,11 @@
     &__link {
       width: 45px;
       height: 45px;
+
+      &:hover {
+        opacity: 0.6;
+        transition: opacity linear 0.2s;
+      }
     }
   }
 }

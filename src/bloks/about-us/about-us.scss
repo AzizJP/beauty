@@ -1,0 +1,145 @@
+$phone_padding: 15px;
+$tablet_padding: 25px;
+$left_padding: 40px;
+$right_padding: 45px;
+
+.about-us {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
+  background-color: $color_grey;
+  color: white;
+
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: $wrapper_max_width;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: $phone_padding;
+    width: calc(100% - $phone_padding * 2);
+    max-width: 540px - 85px;
+    min-height: 212px;
+    background-color: $color_accent;
+
+    &_without-image {
+      flex-direction: column;
+      justify-content: center;
+      align-items: start;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &_input {
+      border: none;
+      border-radius: 30px;
+      padding: 9px 0 9px 25px;
+      max-width: 225px;
+      font-size: 14px;
+      line-height: 16px;
+
+      &::placeholder {
+        color: #c4c4c4;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  &__description {
+    max-width: 231px;
+    margin: 0;
+
+    &_without-image {
+      max-width: 141px;
+    }
+  }
+
+  &__image {
+    width: 100px;
+  }
+
+  &__button {
+    padding: 7px 28px;
+    border: 2px solid #ffffff;
+    border-radius: 30px;
+    background-color: $color_accent;
+    font-size: 14px;
+    line-height: 16px;
+    color: white;
+    transition: all linear 0.2s;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $breakpoint_tablet) {
+  .about-us {
+    padding-bottom: 80px;
+
+    &__wrapper {
+      width: $wrapper_width;
+    }
+
+    &__container {
+      gap: 15px;
+      padding: $tablet_padding;
+      width: calc(100% - $tablet_padding * 2);
+    }
+
+    &__image {
+      width: 120px;
+    }
+
+    &__form {
+      gap: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint_laptop) {
+  .about-us {
+    padding-bottom: 132px;
+
+    &__container {
+      gap: 25px;
+      padding: 35px $right_padding 35px $left_padding;
+      width: calc(100% - $right_padding - $left_padding);
+    }
+
+    &__image {
+      width: 140px;
+    }
+
+    &__form {
+      gap: 25px;
+    }
+
+    &__button {
+      &:hover {
+        background-color: white;
+        color: $color_dark;
+        transition: all linear 0.2s;
+      }
+    }
+  }
+}

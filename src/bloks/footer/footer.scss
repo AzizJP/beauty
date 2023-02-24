@@ -9,6 +9,7 @@
     align-items: center;
     padding: 10px 0;
     gap: 10px;
+    font-style: normal;
     width: $wrapper_width;
     max-width: $wrapper_max_width;
   }
@@ -21,7 +22,6 @@
     &_location {
       align-self: center;
       text-decoration: none;
-      font-style: normal;
       font-size: 10px;
       line-height: 12px;
       color: black;
@@ -58,6 +58,12 @@
       &_location {
         font-size: 14px;
         line-height: 16px;
+        transition: color linear 0.2s;
+
+        &:hover {
+          color: $color_accent;
+          transition: color linear 0.2s;
+        }
       }
     }
   }
