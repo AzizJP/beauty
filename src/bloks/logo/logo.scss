@@ -1,0 +1,19 @@
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__icon {
+    background: url(../../images/logo.svg) no-repeat center/contain;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__title {
+    margin: 0;
+    color: $color_accent;
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+  }
+}

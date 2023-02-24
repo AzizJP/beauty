@@ -1,0 +1,67 @@
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  &__phone-number {
+    margin: 0;
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  &__button {
+    padding: 8px 18px;
+    border: 2px solid #66c05d;
+    border-radius: 40px;
+    font-size: 10px;
+    line-height: 10px;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: $breakpoint_tablet) {
+  .contact {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: ($breakpoint_tablet + 160px)) {
+  .contact {
+    flex-direction: row;
+    gap: 20px;
+
+    &__phone-number {
+      font-size: 14px;
+      line-height: 16px;
+    }
+
+    &__button {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint_laptop) {
+  .contact {
+    gap: 40px;
+
+    &__phone-number {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &__button {
+      font-size: 14px;
+      line-height: 14px;
+      transition: all linear 0.2s;
+    }
+
+    &__button:hover {
+      background-color: $color_accent;
+      color: white;
+      transition: all linear 0.2s;
+    }
+  }
+}

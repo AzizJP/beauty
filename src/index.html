@@ -3,20 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Beauty</title>
   </head>
   <body class="page">
     <header class="header">
       <ul class="menu">
-        <li class="menu__item">Доставка</li>
-        <li class="menu__item">Оплата</li>
-        <li class="menu__item">Отзывы</li>
-        <li class="menu__item">Вопрос - ответ</li>
-        <li class="menu__item">Контакты</li>
+        <li><a class="menu__item" href="#">Доставка</a></li>
+        <li><a class="menu__item" href="#">Оплата</a></li>
+        <li><a class="menu__item" href="#">Отзывы</a></li>
+        <li><a class="menu__item" href="#">Вопрос - ответ</a></li>
+        <li><a class="menu__item" href="#">Контакты</a></li>
       </ul>
       <section class="header__info">
         <div class="logo">
@@ -24,14 +21,69 @@
           <h1 class="logo__title">BEAUTY</h1>
         </div>
         <div class="contact">
-          <p class="contact__phone-number">
-            8 (812) 123-45-67
-          </p>
-          <button class="contact__button">
-            Обратный звонок
-          </button>
+          <p class="contact__phone-number">8 (812) 123-45-67</p>
+          <button type="button" class="contact__button">Обратный звонок</button>
         </div>
       </section>
     </header>
+    <main class="main">Main</main>
+    <footer class="footer">
+      <address class="footer__address">
+        <ul class="messengers">
+          <li>
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="messengers__link"
+              ><span class="messengers__logo messengers__logo_youtube"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://vk.com/" target="_blank" class="messengers__link"
+              ><span class="messengers__logo messengers__logo_vk"></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="messengers__link"
+              ><span class="messengers__logo messengers__logo_facebook"></span
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="messengers__link"
+              ><span class="messengers__logo messengers__logo_instagram"></span
+            ></a>
+          </li>
+        </ul>
+        <div class="footer__contacts">
+          <a
+            href="https://yandex.ru/maps/?text=Санкт-Петербург,Невский пр.,140"
+            target="_blank"
+            class="footer__contacts_location"
+            >198555, Невский пр. 140, офис 140</a
+          >
+          <div class="contact">
+            <p class="contact__phone-number">8 (812) 123-45-67</p>
+            <button type="button" class="contact__button">
+              Обратный звонок
+            </button>
+          </div>
+        </div>
+      </address>
+      <section class="privacy">
+        <div class="privacy__wrapper">
+          <p class="privacy__text">
+            Лучший магазин (с) 2019 Все права защищены. Интернет-магазин
+            оборудования для салонов красоты
+          </p>
+          <p class="privacy__text">Политика конфиденциальности</p>
+        </div>
+      </section>
+    </footer>
   </body>
 </html>
