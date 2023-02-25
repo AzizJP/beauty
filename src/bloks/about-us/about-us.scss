@@ -70,10 +70,6 @@ $max-width: 540px - $left_padding - $right_padding;
   &__description {
     max-width: 231px;
     margin: 0;
-
-    &_if-image-car {
-      max-width: 141px;
-    }
   }
 
   &__image {
